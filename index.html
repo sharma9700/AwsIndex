@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Web page</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+		}
+		
+		.header {
+			background-color: #333;
+			color: #fff;
+			padding: 10px;
+			text-align: center;
+		}
+		
+		.content {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			padding: 20px;
+		}
+		
+		.box {
+			background-color: #ddd;
+			border: 1px solid #999;
+			margin: 10px;
+			padding: 20px;
+			text-align: center;
+			width: 300px;
+		}
+		
+		.box:hover {
+			background-color: #aaa;
+			color: #fff;
+			cursor: pointer;
+		}
+		.logout{
+			margin-top: 10px;
+			margin-left: 720px;
+			width: 90px;
+			height: 30px;
+			font-size: 15px;
+			
+		}
+	</style>
+</head>
+<body>
+	<div class="header">
+		<h1>Hello User</h1>
+	</div>
+	<div>
+		
+	<button class="logout" onclick="window.location.href='https://deep.auth.us-east-1.amazoncognito.com/logout?client_id=619nec4pi1tcv38su0o8vq4mho&response_type=code&scope=email+openid&redirect_uri=https://main.d3331sjyqnkicv.amplifyapp.com/';">
+		Log-out </button>
+	<!-- <a href = "https://deep.auth.us-east-1.amazoncognito.com/logout?client_id=619nec4pi1tcv38su0o8vq4mho&response_type=code&scope=email+openid&redirect_uri=https://main.d3331sjyqnkicv.amplifyapp.com/"> log-out</a>    -->
+		</div>
+</body>
+</html>
